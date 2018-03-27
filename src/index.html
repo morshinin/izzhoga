@@ -1,117 +1,131 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ru">
     <head>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Bootstrap 4 Starter Pack</title>
+        <title>Изжоги.нет</title>
     </head>
 
     <body>
-        <header class="header">
+        <header class="header pt-3 pb-3">
             <div class="container">
-                <div class="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="80"><image width="107" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAABQCAMAAAAp3HtQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC9FBMVEWeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///+51JovAAAA+nRSTlMADTpliaq2xtLRuKySblIlBR1rsuvitXs+B0mr++ak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"/></svg>
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            <img src="img/logo.jpg" class="img-fluid" alt="изжоги.нет лого">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/abanrow.jpg" class="img-fluid" alt="">
+                    </div>
                 </div>
-                <div class="adBanner"></div>
             </div>
         </header>
         <main>
-            <div class="container">
+            <div class="container pb-3">
                 <div class="row justify-content-end">
                     <!-- Left sidebar -->
                      <aside class="col">
-                        <nav class="navbar navbar-expand-sm position-fixed">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarCollapse">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="" id="navbarCollapse">
-                                <ul class="">
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30">
-                                              <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAjVBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///9Yu+oHAAAALnRSTlMAAAIXMkBJUihOWR9NLjg+DjwcATY0KjNTPRZFRAUEQhEQJSQ7OlBHVS1UG1hWcUs3rwAAAAFiS0dEAf8CLd4AAADtSURBVCjPjZPbdoIwEEUPGImOYi2pSGkpvapU/f/fkzyQzCntoudts1fCZDIBhqQzM8+szeZmliZDglwsJWS5SFmv1kJZr7TOZZQ86o38ks2g49q77fae1ve2iCX1lMQqCq+dDfzg9S6gdb0uhfU+cpnAVREfvY4/l8qhVsU+ef2sPtQwiqoGeLHqg0Grz/oKvGlukWl8Bz40Z9B7ySfwpdmyPgAH1rS5NI3w5lSaHI+ELR1sFENtGaWmpsqp6751mxxdiZyBs8KSL/Tie36Jx3I8DlLQ6uLnMF277hQg/98oTg3y1DOYekR/PcEbIKMgPPX9z7cAAAAASUVORK5CYII="/>
-                                            </svg>
-                                            Проблемы
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="29">
-                                              <image width="31" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAMAAABluEcAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA51BMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///80FYUKAAAATHRSTlMAAB0xPS4ZAjRZVy0JSz5NJQpMDRMqRwVSF0hTVidYIwsIVDkgDhpAJAYfSTwYT0UeMDszQitKUDUMFBZRVUQSKSIBA0MQBz8RLChBzJ6IPAAAAAFiS0dEAf8CLd4AAAFJSURBVCjPddJtW4IwFAbgMyLsUUTDVFKTMLXUMkXLMsuy9/z//6eNSWyGz5dd17k32M5GpMXYM/ctpkTTzAF4srkdbuch46S6XUCcYoorjMJ/P3QTRra07RoDR1uufhzlCqq62566+LhS0/9v1xsnzVh9HzjVPGihRNaGT9gZ2tr5OXf40N3wOS60/vXqEcsJfdKZ+4B/nOIJxqXOjIro/vXoasi3x3QfusoVXGPEthzjhEMYZAcydm/jE4VHpSYaMllveiP8dpawT1b5TmnkoMPIQFEy37kY7tVOuxkiE7mAaJ7nq0UetHss88qEz1vg0aIUfxKl5XNo+lVKcy+qBZ3kjLrL5rxgvsPDqLZqLV5jn8NzTMcx67M38c5k8R2t/ke8/pOxFWPT8Av4jt/fUn+eUZqLdvJ+g5+1mxepOeuByNQZL3l/fwEiRSQF9MZAxQAAAABJRU5ErkJggg=="/>
-                                            </svg>
-                                            Лечение и советы
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30">
-                                              <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAq1BMVEX///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///837gVtAAAAOHRSTlMAACBPVVJTShZYWRFXVAxMBjBCPD5JQD9RLS45Ry8rVkQDAT1IDwoOQTc0M1AcHR84S05DJTopJOJPTpEAAAABYktHRACIBR1IAAAAxUlEQVQoz5XT5w6CMBSG4QPUwRFEEKjiwIG497r/O5OoFKy1wvv3Sc6XNCmoGql8ViW1OqTpKKqRsiFks/lmImS0WlJGW85OxobTdl237eXZz5gqr8wc04w7djcp6OliFkVB7ft1CQ+SsxIeIupyJsU4NFihzvNorLAAJlOOo1ncZMVzp9x26FCfRReEY1/Jb8OS48oqsFnBelNu21K3u6x9JN8+8Mc178jyToXfPPzHhoy1H58I8QxdxAt8f8Fn5Ao36w4PO3koVl/w3YAAAAAASUVORK5CYII="/>
-                                            </svg>
-                                            Новости
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="31">
-                                              <image width="23" height="31" opacity=".349" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAMAAAA7p6b/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///9hYm0+AAAAOnRSTlMAABFDVAMID1ZZDlBYCg0gK1ccLB1ASwQ5QSQ2PlIZMjtMGwlRM0kGRS5KH04tNTpPKiULRlMxAU0jkLjH8AAAAAFiS0dEAf8CLd4AAAD3SURBVCjPtdFbc4IwEAXgE4LKGiiG4qVYG8RCqxVr7/X//7EGDMIg4/jS87TzTWbnzAaoYnGbWwA7xmCvP3CIyBn0e00fCpeOccXQuHfjwac6PtPCMJLEETQ8YJzkLfTEETY81E5U+Lj1fmx8gunsrspsyibGKUIdxiKqnOZhUCWcU+3nafj9otMfoFou4yVRgtWSHlOlVOwaz/D07MMTROvynhvjzovuVzBt13me7+Rpv4+V6Ozz2uIr+u/fsi7fe0hbvniPSXwgsemzuFP0ZXwDKAuJnr7L/qc7p7p/+TWS6x/I6v3qJ+nu83vhzv/jB2GfRxz+AOR7HqLWDinnAAAAAElFTkSuQmCC"/>
-                                            </svg>
-                                            Тесты
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="24">
-                                              <image width="30" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAMAAADat72NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAh1BMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///9GN7InAAAALHRSTlMAAAQ1SEtKPFlXVlU5KzIaTwc3OBdHKg5CNBxJUh4/IQkKBkEgGE4pVBJTPdCd6GYAAAABYktHRAH/Ai3eAAAAm0lEQVQoz43S2xKCMAwE0IW2Iq2KeL9UARVE/f//U8cRROziPvTlTDNJJvCFVL2fUVL4CPokAULGITRjDcPYNHgwpDxCNGa/gXji5ikAb6Yox3PGC3dxgeWKtLbefO2wya0Nmr+3trWE9Q7+3sFJmh1wPCFLP5JUnD/mRXF+vvDeyevitiwugCjrXO2reDXMTbZb013H1HGK/JDvr3EauOMwAHYAAAAASUVORK5CYII="/>
-                                            </svg>
-                                            Видео
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="30">
-                                              <image width="26" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAMAAAAFBf7qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAmVBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///+kNHs3AAAAMnRSTlMAACxOVSdZSVdKLQ5UFBwWQAZCGTM2ISVSTRo9UwxFWBMiFxgmPiMyMVFGVlBLOkQVNC0ulqwAAAABYktHRAH/Ai3eAAAA20lEQVQoz3XS6RKCIBQF4HMtsWxxKdrMLM12rd7/5dImgRg4f/DcbxjQEXB6fUN6DsFllrjwZBl43kA2D0Px7I+AkS/qUOwaT/DNZCx2dTRtxkEA0FSnEIhixuKIKNRoBszblRMtNOJLd9Wua6KNftYvCZFrpm1KtDNStgcdmJFyoMiMdARy5UMptGrerW+mEjgxM52Bi4Wut9vWQv/5o/vjcbcQjyJuIQdwVKpkqdO0lq3C03aNJwobFcCLh2VZJnE3ipOmhvxFEPn9Zj51gWZSVGrNh5nwfkOhD1MGFulo46jYAAAAAElFTkSuQmCC"/>
-                                            </svg>
-                                            Вопросы и ответы
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="28">
-                                              <image width="30" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA+VBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///8t/O4DAAAAUnRSTlMAABEpGzQ/MQ8cTzANR1lTHgcgRRJRQQJAEywtIkQJS1IMJhohNiUDVg5UKjhKOygkV1UGOkwzFUk+KwE8UB89WDJCLwtDGU0uHQUUIxAEFhc3eZkfUgAAAAFiS0dEAf8CLd4AAAFqSURBVCjPddMJV4JAEADgWfKIklEJDyo8kgAtDS3NMpXSTq3s//+Z9kLQp/MeLMz3dpi37AIAKAcQBeEBiWQqrdAR4FA9Ot7ijIY0sjnKef3EKBRLcc5hOcUcTYDTs3OrUq3VIzbxolHgXISyfenYmmthIuSSl26iiBZcYebasdvQwRvJfrfZk+wBJPH2ztH7MMB7wcOHR6m0OIBWGz35tlXppgSPLS3kCU2Men2Y6jYGZcFaEEgdjlimiRY8vyC2Bc/Cud6c8HZUfO3Q12DOOSm1bxLBoHs8MWD8hjimz+8zl4QMrpL7qCJ+AvjoNb5MdeGKtY8F/ahPKxskijjDkjWgkn08Ye1m9rEj1nmxm302N0uvxS5miot6b8M3lf5Uhbm5zY5UINyNTV4rXdTvFnUlzpGyzRTzSNVoK3I3Ql7GVGxkpSX7o4lKVHl9DFh/BZdzvhZTyUTJ4vhHFP+d6tuHiJDV34re/wHAdylXaSkS4QAAAABJRU5ErkJggg=="/>
-                                            </svg>
-                                            Диеты
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                        <div class="position-fixed">
+                            <nav class="navbar navbar-expand-sm menu mb-3">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="" id="navbarCollapse">
+                                    <ul class="list-group">
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30">
+                                                  <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAjVBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///9Yu+oHAAAALnRSTlMAAAIXMkBJUihOWR9NLjg+DjwcATY0KjNTPRZFRAUEQhEQJSQ7OlBHVS1UG1hWcUs3rwAAAAFiS0dEAf8CLd4AAADtSURBVCjPjZPbdoIwEEUPGImOYi2pSGkpvapU/f/fkzyQzCntoudts1fCZDIBhqQzM8+szeZmliZDglwsJWS5SFmv1kJZr7TOZZQ86o38ks2g49q77fae1ve2iCX1lMQqCq+dDfzg9S6gdb0uhfU+cpnAVREfvY4/l8qhVsU+ef2sPtQwiqoGeLHqg0Grz/oKvGlukWl8Bz40Z9B7ySfwpdmyPgAH1rS5NI3w5lSaHI+ELR1sFENtGaWmpsqp6751mxxdiZyBs8KSL/Tie36Jx3I8DlLQ6uLnMF277hQg/98oTg3y1DOYekR/PcEbIKMgPPX9z7cAAAAASUVORK5CYII="/>
+                                                </svg>
+                                                Проблемы
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="29">
+                                                  <image width="31" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAMAAABluEcAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA51BMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///80FYUKAAAATHRSTlMAAB0xPS4ZAjRZVy0JSz5NJQpMDRMqRwVSF0hTVidYIwsIVDkgDhpAJAYfSTwYT0UeMDszQitKUDUMFBZRVUQSKSIBA0MQBz8RLChBzJ6IPAAAAAFiS0dEAf8CLd4AAAFJSURBVCjPddJtW4IwFAbgMyLsUUTDVFKTMLXUMkXLMsuy9/z//6eNSWyGz5dd17k32M5GpMXYM/ctpkTTzAF4srkdbuch46S6XUCcYoorjMJ/P3QTRra07RoDR1uufhzlCqq62566+LhS0/9v1xsnzVh9HzjVPGihRNaGT9gZ2tr5OXf40N3wOS60/vXqEcsJfdKZ+4B/nOIJxqXOjIro/vXoasi3x3QfusoVXGPEthzjhEMYZAcydm/jE4VHpSYaMllveiP8dpawT1b5TmnkoMPIQFEy37kY7tVOuxkiE7mAaJ7nq0UetHss88qEz1vg0aIUfxKl5XNo+lVKcy+qBZ3kjLrL5rxgvsPDqLZqLV5jn8NzTMcx67M38c5k8R2t/ke8/pOxFWPT8Av4jt/fUn+eUZqLdvJ+g5+1mxepOeuByNQZL3l/fwEiRSQF9MZAxQAAAABJRU5ErkJggg=="/>
+                                                </svg>
+                                                Лечение и советы
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30">
+                                                  <image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAq1BMVEX///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///837gVtAAAAOHRSTlMAACBPVVJTShZYWRFXVAxMBjBCPD5JQD9RLS45Ry8rVkQDAT1IDwoOQTc0M1AcHR84S05DJTopJOJPTpEAAAABYktHRACIBR1IAAAAxUlEQVQoz5XT5w6CMBSG4QPUwRFEEKjiwIG497r/O5OoFKy1wvv3Sc6XNCmoGql8ViW1OqTpKKqRsiFks/lmImS0WlJGW85OxobTdl237eXZz5gqr8wc04w7djcp6OliFkVB7ft1CQ+SsxIeIupyJsU4NFihzvNorLAAJlOOo1ncZMVzp9x26FCfRReEY1/Jb8OS48oqsFnBelNu21K3u6x9JN8+8Mc178jyToXfPPzHhoy1H58I8QxdxAt8f8Fn5Ao36w4PO3koVl/w3YAAAAAASUVORK5CYII="/>
+                                                </svg>
+                                                Новости
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="31">
+                                                  <image width="23" height="31" opacity=".349" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAMAAAA7p6b/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///9hYm0+AAAAOnRSTlMAABFDVAMID1ZZDlBYCg0gK1ccLB1ASwQ5QSQ2PlIZMjtMGwlRM0kGRS5KH04tNTpPKiULRlMxAU0jkLjH8AAAAAFiS0dEAf8CLd4AAAD3SURBVCjPtdFbc4IwEAXgE4LKGiiG4qVYG8RCqxVr7/X//7EGDMIg4/jS87TzTWbnzAaoYnGbWwA7xmCvP3CIyBn0e00fCpeOccXQuHfjwac6PtPCMJLEETQ8YJzkLfTEETY81E5U+Lj1fmx8gunsrspsyibGKUIdxiKqnOZhUCWcU+3nafj9otMfoFou4yVRgtWSHlOlVOwaz/D07MMTROvynhvjzovuVzBt13me7+Rpv4+V6Ozz2uIr+u/fsi7fe0hbvniPSXwgsemzuFP0ZXwDKAuJnr7L/qc7p7p/+TWS6x/I6v3qJ+nu83vhzv/jB2GfRxz+AOR7HqLWDinnAAAAAElFTkSuQmCC"/>
+                                                </svg>
+                                                Тесты
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="24">
+                                                  <image width="30" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAMAAADat72NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAh1BMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///9GN7InAAAALHRSTlMAAAQ1SEtKPFlXVlU5KzIaTwc3OBdHKg5CNBxJUh4/IQkKBkEgGE4pVBJTPdCd6GYAAAABYktHRAH/Ai3eAAAAm0lEQVQoz43S2xKCMAwE0IW2Iq2KeL9UARVE/f//U8cRROziPvTlTDNJJvCFVL2fUVL4CPokAULGITRjDcPYNHgwpDxCNGa/gXji5ikAb6Yox3PGC3dxgeWKtLbefO2wya0Nmr+3trWE9Q7+3sFJmh1wPCFLP5JUnD/mRXF+vvDeyevitiwugCjrXO2reDXMTbZb013H1HGK/JDvr3EauOMwAHYAAAAASUVORK5CYII="/>
+                                                </svg>
+                                                Видео
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="30">
+                                                  <image width="26" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAMAAAAFBf7qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAmVBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///+kNHs3AAAAMnRSTlMAACxOVSdZSVdKLQ5UFBwWQAZCGTM2ISVSTRo9UwxFWBMiFxgmPiMyMVFGVlBLOkQVNC0ulqwAAAABYktHRAH/Ai3eAAAA20lEQVQoz3XS6RKCIBQF4HMtsWxxKdrMLM12rd7/5dImgRg4f/DcbxjQEXB6fUN6DsFllrjwZBl43kA2D0Px7I+AkS/qUOwaT/DNZCx2dTRtxkEA0FSnEIhixuKIKNRoBszblRMtNOJLd9Wua6KNftYvCZFrpm1KtDNStgcdmJFyoMiMdARy5UMptGrerW+mEjgxM52Bi4Wut9vWQv/5o/vjcbcQjyJuIQdwVKpkqdO0lq3C03aNJwobFcCLh2VZJnE3ipOmhvxFEPn9Zj51gWZSVGrNh5nwfkOhD1MGFulo46jYAAAAAElFTkSuQmCC"/>
+                                                </svg>
+                                                Вопросы и ответы
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item menuItem">
+                                            <a href="" class="menuAnchor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="28">
+                                                  <image width="30" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA+VBMVEWeIoL///+eIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoKeIoL///8t/O4DAAAAUnRSTlMAABEpGzQ/MQ8cTzANR1lTHgcgRRJRQQJAEywtIkQJS1IMJhohNiUDVg5UKjhKOygkV1UGOkwzFUk+KwE8UB89WDJCLwtDGU0uHQUUIxAEFhc3eZkfUgAAAAFiS0dEAf8CLd4AAAFqSURBVCjPddMJV4JAEADgWfKIklEJDyo8kgAtDS3NMpXSTq3s//+Z9kLQp/MeLMz3dpi37AIAKAcQBeEBiWQqrdAR4FA9Ot7ijIY0sjnKef3EKBRLcc5hOcUcTYDTs3OrUq3VIzbxolHgXISyfenYmmthIuSSl26iiBZcYebasdvQwRvJfrfZk+wBJPH2ztH7MMB7wcOHR6m0OIBWGz35tlXppgSPLS3kCU2Men2Y6jYGZcFaEEgdjlimiRY8vyC2Bc/Cud6c8HZUfO3Q12DOOSm1bxLBoHs8MWD8hjimz+8zl4QMrpL7qCJ+AvjoNb5MdeGKtY8F/ahPKxskijjDkjWgkn08Ye1m9rEj1nmxm302N0uvxS5miot6b8M3lf5Uhbm5zY5UINyNTV4rXdTvFnUlzpGyzRTzSNVoK3I3Ql7GVGxkpSX7o4lKVHl9DFh/BZdzvhZTyUTJ4vhHFP+d6tuHiJDV34re/wHAdylXaSkS4QAAAABJRU5ErkJggg=="/>
+                                                </svg>
+                                                Диеты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <img src="img/abansquare.jpg" alt="">
+                        </div>
                     </aside>
                     <div class="content col-lg-9"> 
                         <!-- Search -->
                         <div class="row">
-                            <div class="search">
-                                <form action="">
-                                    <input type="text">
-                                    <button>Search</button>
-                                </form>
-                            </div><!-- end search -->
+                            <div class="col">
+                                <div class="search">
+                                    <form action="">
+                                        <input type="text" class="form-control">
+                                        <button>Search</button>
+                                    </form>
+                                </div><!-- end search -->
+                            </div>
                         </div><!-- end row -->
                         <!-- News and Pop articles -->
                         <div class="row">
+                            <div class="col">
+                                <h2 class="title-border">Новости об изжоге</h2>
+                            </div>
+                        </div>
+                        <div class="row">
                         <div class="news col">
-                            <h2>Новости об изжоге</h2>
-                            <div class="card border-light">
+                            <div class="card border-light newsCard">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-3">
                                         <img src="img/izzhoga.jpg" alt="Регулярная изжога" class="w-100">
                                     </div>
-                                    <div class="col-lg-8">
-                                        <h3 class="newsCardTitle">
+                                    <div class="col-lg">
+                                        <h4 class="newsCardTitle">
                                             Регулярная изжога увеличивает риск рака горла, миндалин и синусов
-                                        </h3>
+                                        </h4>
                                         <p class="newsCardCopy">
                                             Исследователи полагают, что причиной может
                                             быть не только сама изжога, но и действие
@@ -121,15 +135,15 @@
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <div class="card border-light">
+                            <div class="card border-light newsCard">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-3">
                                         <img src="img/vitamins.jpg" alt="поливитамины" class="w-100">
                                     </div>
-                                    <div class="col-lg-8">
-                                        <h3 class="newsCardTitle">
+                                    <div class="col-lg">
+                                        <h4 class="newsCardTitle">
                                             Эксперт: поливитамины могут вызвать изжогу
-                                        </h3>
+                                        </h4>
                                         <p class="newsCardCopy">
                                             Витаминные добавки могут спровоцировать заброс
                                             соляной кислоты из желудка в пищевод и тем
@@ -139,15 +153,15 @@
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <div class="card border-light">
+                            <div class="card border-light newsCard">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-3">
                                         <img src="img/hamburgerMin.png" alt="гамбургер" class="w-100">
                                     </div>
-                                    <div class="col-lg-8">
-                                        <h3 class="newsCardTitle">
+                                    <div class="col-lg">
+                                        <h4 class="newsCardTitle">
                                             8 фактов об изжоге, о которых вы не знали
-                                        </h3>
+                                        </h4>
                                         <p class="newsCardCopy">
                                             Если при виде гамбургера (или даже при одной
                                             мысли о нём), у вас в груди начинает жечь, а во рту
@@ -157,16 +171,16 @@
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <div class="card border-light">
+                            <div class="card border-light newsCard">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-3">
                                         <img src="img/tea.png" alt="Горячий чай" class="w-100">
                                     </div>
-                                    <div class="col-lg-8">
-                                        <h3 class="newsCardTitle">
+                                    <div class="col-lg">
+                                        <h4 class="newsCardTitle">
                                             Горячий чай оказался связан с повышенным
                                             риском рака пищевода
-                                        </h3>
+                                        </h4>
                                         <p class="newsCardCopy">
                                             Обжигающе горячий чай существенно повышает
                                             риск развития рака пищевода у курильщиков
@@ -176,13 +190,14 @@
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
+                            <a href="#0" class="btn btn-primary btn-lg">Читать новости</a>
                         </div><!-- end news -->
                         <aside class="popArticles col-lg-4">
                             <h3 class="popArticlesTitle text-center">
                                 Популярные статьи
                             </h3>
-                            <div class="card border-light">
-                                <img src="img/3.jpg" alt="Сильная и постоянная изжога" class="card-img-top rounded-circle">
+                            <div class="card border-light popCard">
+                                <img src="img/3.jpg" alt="Сильная и постоянная изжога" class="card-img-top rounded-circle popArticlesImg">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Сильная и постоянная изжога-причины и последствия
@@ -198,8 +213,8 @@
                                     </a>
                                 </div><!-- end card-body -->
                             </div><!-- end card -->
-                            <div class="card border-light">
-                                <img src="img/4.jpg" alt="Как связаны лишний вес и изжога" class="card-img-top rounded-circle">
+                            <div class="card border-light popCard">
+                                <img src="img/4.jpg" alt="Как связаны лишний вес и изжога" class="card-img-top rounded-circle popArticlesImg">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Как связаны лишний вес
@@ -217,7 +232,7 @@
                                     </a>
                                 </div><!-- end card-body -->
                             </div><!-- end card -->
-                            <a href="" class="btn btn-primary">
+                            <a href="" class="btn btn-primary btn-sm">
                                 Смотреть еще
                             </a>
                         </aside><!-- end popArticles -->
@@ -227,26 +242,23 @@
             </div><!-- end container -->
                 <!-- Hero -->
             <section class="hero">
-                <div class="container">
+                <div class="container heroInner">
                     <div class="row justify-content-end">
                         <div class="col-lg-9">
                             <div class="row">
-                                <h2>
+                                <h2 class="w-50 h3">
                                     Практические советы
                                     по избавлению от изжоги
                                 </h2>
                             </div><!-- end row -->
-                            <div class="row">
+                            <div class="row justify-content-end">
                                 <div class="col-lg-6">
-                                    <img src="img/protivopokazaniya.png" alt="Противопоказания" class="img-fluid">
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="row">
+                                    <div class="row mb-2">
                                         <div class="col-lg">
-                                            <div class="card border-light">
-                                                <img src="img/7.jpg" alt="сода" class="card-img-top">
+                                            <div class="card border-light heroCard">
+                                                <img src="img/7.jpg" alt="сода" class="card-img-top heroCardImg">
                                                 <div class="card-body">
-                                                    <p class="card-text">
+                                                    <p class="card-text heroCardText">
                                                         Почему не стоит
                                                         избавляться от изжоги
                                                         при помощи соды
@@ -255,10 +267,10 @@
                                             </div>
                                         </div>
                                         <div class="col-lg">
-                                            <div class="card border-light">
-                                                <img src="img/organicCowMilkFresh.jpg" alt="Молоко" class="card-img-top">
+                                            <div class="card border-light heroCard">
+                                                <img src="img/organicCowMilkFresh.jpg" alt="Молоко" class="card-img-top heroCardImg">
                                                 <div class="card-body">
-                                                    <p class="card-text">
+                                                    <p class="card-text heroCardText">
                                                         Можно ли лечить
                                                         мучающюю изжогу 
                                                         при помощи молока?
@@ -267,12 +279,12 @@
                                             </div>
                                         </div>
                                     </div><!-- end row -->
-                                    <div class="row">
+                                    <div class="row mb-3">
                                         <div class="col">
-                                            <div class="card border-light">
-                                                <img src="img/5.jpg" alt="Капсулы" class="card-img-top">
+                                            <div class="card border-light heroCard">
+                                                <img src="img/5.jpg" alt="Капсулы" class="card-img-top heroCardImg">
                                                 <div class="card-body">
-                                                    <p class="card-text">
+                                                    <p class="card-text heroCardText">
                                                         Почему врачи при
                                                         лечении ГЭРБ
                                                         назначают не только
@@ -282,10 +294,10 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card border-light">
-                                                <img src="img/6.jpg" alt="Таблетки" class="card-img-top">
+                                            <div class="card border-light heroCard">
+                                                <img src="img/6.jpg" alt="Таблетки" class="card-img-top heroCardImg">
                                                 <div class="card-body">
-                                                    <p class="card-text">
+                                                    <p class="card-text heroCardText">
                                                        Зачем  при ГЭРБ
                                                        лечащим врачём
                                                        назначаются ещё и 
@@ -302,22 +314,29 @@
                 </div><!-- end container -->
             </section><!-- end hero -->
             <!-- FAQ and CTA -->
-            <section>
+            <section class="pt-3 pb-3">
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="col-lg-9">
                             <div class="row">
+                                <h2 class="h2 title-border">
+                                    Вопросы и ответы
+                                </h2>
+                            </div>
+                            <div class="row">
                                 <!-- FAQ -->
                                 <div class="col-lg">
-                                    <div class="row">
+                                    <div class="row mb-3">
                                         <div class="col-lg">
                                             <div class="card border-light">
-                                                <img src="img/16.png" alt="Ирина" class="card-img-top">
+                                                <div class="testimonialCardImgWrapper">
+                                                    <img src="img/16.png" alt="Ирина" class="card-img-top testimonialCardImg">
+                                                </div>
                                                 <div class="card-body">
-                                                    <h3 class="card-title">
+                                                    <h3 class="card-title text-center">
                                                         Ирина, 43 года
                                                     </h3>
-                                                    <p class="card-text">
+                                                    <p class="card-text testimonialCardText">
                                                         Изжога для меня постоянное явление, принимаю соду, помогает. Слышала, что есть народные средства, которые также предотвращают её. Что вы, как врач, думаете, по этому поводу и стоит ли обращаться за методами народной
                                                         медицины в лечении изжоги?
                                                     </p>
@@ -329,12 +348,14 @@
                                         </div>
                                         <div class="col-lg">
                                             <div class="card border-light">
-                                                <img src="img/18.jpg" alt="Андрей" class="card-img-top">
+                                                <div class="testimonialCardImgWrapper">
+                                                    <img src="img/18.jpg" alt="Андрей" class="card-img-top testimonialCardImg">
+                                                </div>
                                                 <div class="card-body">
-                                                    <h3 class="card-title">
+                                                    <h3 class="card-title text-center">
                                                         Андрей, 39 лет
                                                     </h3>
-                                                    <p class="card-text">
+                                                    <p class="card-text testimonialCardText">
                                                         Как-то пожаловался приятелю на переодические приступы изжоги, и он убедил, что в этой ситуации нужно пить молоко. Попробовал, но после недолгого облегчения вскоре почувствовал усиление жжения за грудиной. Действительно помогает ли молоки от изжоги?
                                                         медецины в лечении изжоги?
                                                     </p>
@@ -348,12 +369,14 @@
                                     <div class="row">
                                         <div class="col-lg">
                                             <div class="card border-light">
-                                                <img src="img/17.jpg" alt="" class="card-img-top">
+                                                <div class="testimonialCardImgWrapper">
+                                                    <img src="img/17.jpg" alt="" class="card-img-top testimonialCardImg">
+                                                </div>
                                                 <div class="card-body">
-                                                    <h3 class="card-title">
+                                                    <h3 class="card-title text-center">
                                                         Светлана, 25 лет
                                                     </h3>
-                                                    <p class="card-text">
+                                                    <p class="card-text testimonialCardText">
                                                         После родов прошло полгода, но по сей день меня мучает не в желудке изжога, а в горле. Причины этого заболевания известны?
                                                     </p>
                                                     <a href="" class="card-link">
@@ -364,12 +387,14 @@
                                         </div>
                                         <div class="col-lg">
                                             <div class="card border-light">
-                                                <img src="img/19.jpg" alt="Юрий" class="card-img-top">
+                                                <div class="testimonialCardImgWrapper">
+                                                    <img src="img/19.jpg" alt="Юрий" class="card-img-top testimonialCardImg">
+                                                </div>
                                                 <div class="card-body">
-                                                    <h3 class="card-title">
+                                                    <h3 class="card-title text-center">
                                                         Юрий, 38 лет
                                                     </h3>
-                                                    <p class="card-text">
+                                                    <p class="card-text testimonialCardText">
                                                         После еды меня часто тошнит. 
                                                         Иногда в добавок к этом прибавляется икота и отрыжка. Если это происходит в гостях, бывает особенно неприятно. Что мне делать?
                                                     </p>
@@ -378,6 +403,11 @@
                                                     </a>
                                                 </div><!-- end card-body -->
                                             </div><!-- end card -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#0" class="btn btn-primary btn-lg">Смотреть все</a>
                                         </div>
                                     </div>
                                 </div>
@@ -409,7 +439,7 @@
                                             <label for="">Что Вас беспокоит?</label>
                                             <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Напишите Ваш вопрос"></textarea>
                                         </div>
-                                        <button class="btn btn-primary">Задать вопрос</button>
+                                        <button class="btn btn-primary btn-sm">Задать вопрос</button>
                                     </form>
                                 </aside>
                             </div><!-- end row -->
@@ -418,38 +448,44 @@
                 </div><!-- end container -->
             </section><!-- end FAQ and CTA -->
             <!-- Tests -->
-            <section>
+            <section class="tests pt-3 pb-3">
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="col-lg-9">
                             <div class="row">
-                                <h2>
-                                    Пройдите наши тесты
-                                </h2>
+                                <div class="col">
+                                    <h2 class="h2 title-border">
+                                        Пройдите наши тесты
+                                    </h2>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg">
-                                    <div class="card border-light">
+                                    <div class="card border-light testsCard">
                                         <div class="card-body">
-                                            <h3>
+                                            <h4 class="text-center mb-2">
                                                 Знаете вы, что такое
                                                 изжога и от чего она бывает?
-                                            </h3>
+                                            </h4>
                                         </div>
-                                        <img src="img/10.jpg" alt="Перец" class="card-img-bottom">
-                                        <a href="#0" class="btn btn-primary">Пройти тест</a>
+                                        <img src="img/10.jpg" alt="Перец" class="card-img-bottom mb-3">
+                                        <div class="text-center">
+                                            <a href="#0" class="btn btn-primary">Пройти тест</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg">
-                                    <div class="card border-light">
+                                    <div class="card border-light testsCard">
                                         <div class="card-body">
-                                            <h3>
+                                            <h4 class="text-center">
                                                 Стоит ли беспокоиться при
                                                  изжоге?
-                                            </h3>
+                                            </h4>
                                         </div>
-                                        <img src="img/11.jpg" alt="Шея" class="card-img-bottom">
-                                        <a href="#0" class="btn btn-primary">Пройти тест</a>
+                                        <img src="img/11.jpg" alt="Шея" class="card-img-bottom mb-3">
+                                        <div class="text-center">
+                                            <a href="#0" class="btn btn-primary">Пройти тест</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -458,12 +494,12 @@
                 </div>
             </section><!-- end tests -->
             <!-- Videos -->
-            <section>
+            <section class="pt-3 pb-3">
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="col-lg-9">
                             <div class="row">
-                                <h2>
+                                <h2 class="title-border">
                                     Видео
                                 </h2>
                             </div>
@@ -498,7 +534,7 @@
                 </div>
             </section><!-- end video -->
         </main>
-        <footer class="bg-primary">
+        <footer class="bg-primary footer">
             <div class="container">
                 <div class="row">
                     <div class="col">

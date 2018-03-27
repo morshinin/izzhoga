@@ -1,10 +1,109 @@
 // Main Sass File
 $primary-color: #9e2282;
+$primary-dark: #71195d;
+$gray-100: #f6f6f6;
+$grid-gutter-width: 15px;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$headings-font-weight: bold;
+$headings-line-height: 1.8;
+$theme-colors: (
+	"primary": $primary-color
+);
 
-h1 {
-	color: $primary-color;
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.menu {
+	box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.39);
+	border-radius: 10px;
+	padding: 0;
+	& .list-group {
+		border-radius: 10px;
+		border: solid 1px #5f6061;
+	}
+	& .menuItem:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	}
+	& .menuItem:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	}
 }
-
+.menuItem {
+	padding: 0;
+	border: 0;
+}
+.menuAnchor {
+	display: flex;
+	padding: 0.75rem 1.25rem;
+	text-transform: uppercase;
+	&:hover {
+		background: $gray-200;
+		text-decoration: none;
+	}
+}
+.newsCard,
+.popCard {
+	padding: .5rem 0;
+	margin-bottom: .5rem;
+}
+.popArticlesImg {
+	width: 139px;
+	margin: auto;
+}
 .hero {
-	background: gray;
+	background: $gray-100;
+	padding: 28px 0 0;
+}
+.heroInner {
+	background-image: url(../img/protivopokazaniya.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.heroCard {
+	box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 0;
+}
+.heroCardImg {
+	height: 108px;
+}
+.heroCardText {
+	font-size: $font-size-sm;
+}
+.btn-primary {
+	box-shadow: 5px 5px 0 $primary-dark;
+}
+.testimonialCardImgWrapper {
+	border: 3px solid $primary-color;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.testimonialCardImg {
+	max-width: 50px;
+	max-height: 63px;
+	margin: auto;
+}
+.testimonialCardText {
+	font-size: $font-size-sm;
+}
+.tests {
+	background: $gray-100;
+}
+.testsCard {
+	background: $gray-100;
+}
+.footer {
+	font-size: 13px;
+	padding: 34px 0;
+}
+.title-border {
+	background-image: linear-gradient(to right, transparent 60%, white 60%), linear-gradient(to bottom, transparent 95%, $gray-300 95%);
 }
