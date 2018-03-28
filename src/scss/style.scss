@@ -10,6 +10,7 @@ $h4-font-size: 1rem;
 $headings-font-weight: bold;
 $navbar-padding-y: 0;
 $navbar-padding-x: 0;
+$btn-padding-x-lg: 3rem;
 $theme-colors: (
 	"primary": $primary-color
 );
@@ -120,7 +121,7 @@ a.menuAnchor {
 	border-radius: 0;
 }
 .heroCardImg {
-	height: 108px;
+	// height: 108px;
 }
 .heroCardText {
 	font-size: $font-size-sm;
