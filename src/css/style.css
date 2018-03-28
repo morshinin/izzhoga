@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: bold;
-  line-height: 1.8;
+  line-height: 1.2;
   color: inherit; }
 
 h1, .h1 {
@@ -329,22 +329,22 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.8; }
+  line-height: 1.2; }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.8; }
+  line-height: 1.2; }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.8; }
+  line-height: 1.2; }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.8; }
+  line-height: 1.2; }
 
 hr {
   margin-top: 1rem;
@@ -6038,6 +6038,17 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+a:not(.btn) {
+  border-bottom: 2px solid #9e2282;
+  font-weight: bold; }
+  a:not(.btn):hover {
+    color: #71195d;
+    border-bottom: 2px solid #71195d; }
+
+@media (min-width: 992px) {
+  .sidebarInner {
+    position: fixed; } }
+
 .menu {
   box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.39);
   border-radius: 10px;
@@ -6059,15 +6070,25 @@ a.text-dark:hover, a.text-dark:focus {
 .menuAnchor {
   display: flex;
   padding: 0.75rem 1.25rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: 0; }
   .menuAnchor:hover {
     background: #e9ecef;
     text-decoration: none; }
+
+.searchBtn {
+  background: #f6f6f6;
+  border: 1px solid #ced4da;
+  border-left: 0; }
 
 .newsCard,
 .popCard {
   padding: .5rem 0;
   margin-bottom: .5rem; }
+
+.newsCardTitle {
+  margin: 0;
+  line-height: 1.5; }
 
 .popArticlesImg {
   width: 139px;
@@ -6122,6 +6143,3 @@ a.text-dark:hover, a.text-dark:focus {
 .footer {
   font-size: 13px;
   padding: 34px 0; }
-
-.title-border {
-  background-image: linear-gradient(to right, transparent 60%, white 60%), linear-gradient(to bottom, transparent 95%, #dee2e6 95%); }

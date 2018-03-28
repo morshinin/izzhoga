@@ -12,12 +12,12 @@
         <header class="header pt-3 pb-3">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-lg">
                         <div class="logo">
                             <img src="img/logo.jpg" class="img-fluid" alt="изжоги.нет лого">
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg">
                         <img src="img/abanrow.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="row justify-content-end">
                     <!-- Left sidebar -->
                      <aside class="col">
-                        <div class="position-fixed">
+                        <div class="sidebarInner">
                             <nav class="navbar navbar-expand-sm menu mb-3">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarCollapse">
                                     <span class="navbar-toggler-icon"></span>
@@ -99,25 +99,32 @@
                     </aside>
                     <div class="content col-lg-9"> 
                         <!-- Search -->
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col">
-                                <div class="search">
-                                    <form action="">
-                                        <input type="text" class="form-control">
-                                        <button>Search</button>
-                                    </form>
-                                </div><!-- end search -->
+                                <form class="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Поиск по сайту">
+                                        <div class="input-group-append">
+                                            <button class="btn searchBtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31">
+                                                  <image width="31" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAMAAAAocOYLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABiVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////wfpXTAAAAgXRSTlMAI2+t0uvt1LJ4KiekNWr6fI7vqWdVU2Wh6KJ5hxcOeveVQeY5JtZe3PIoFeLsX1Q4wsCo11D7Vj4wgfQZB+Nhmtm+y42b2L1/gvUWBOFR/VIxxd8CYk4zHw8QRjIh0/hY9nYJa9GR5Z1kRZiG7oCluS7p3byJbQo3Zjz8QldMacEG2Ph/AAAAAWJLR0SCi7P/RAAAAW1JREFUKM99kvk/AlEUxadSUnaStaJQItmylJAt2claQvY9e5Zw/nN3zKh5E90f5nPO+555776F48RSKFV5ak2+tkDH/VH6QqRLW5SFi0sgrVIZLuMHyysqDVXG6hpe1zK4jh+qbxCMyWwh1yjBTeSttoxvbqGB1oy3A4426XzOdqDD9OtclO5k+3FLejR1Ad3y/fQAvaLs8wD9cj5AEwwKcgjw+uR82A+MCHIUGMs+zwBgFpQKGM/mWmBCUJPAVDafBoKCmgFCs3I8Nw8YBbmwCCzJuY36Xxb3vwIE5JxuezUs6jXKrrN4g7ljWsuxKcVbdP6h7bSNUNofzeCdGLC7J8kHKbAfF384OFSTPWLWO+YfyMnpWeTcdWH/eWGeSyagZN6f5Yo+10xAd5PBCb2CD8TZPd3GE7E7zf3Do5tM1EuBJ/mphJ2+Z1Em+Uf6wv1fr28UcOUIvPOtpHIEPvjAZ46AgfhXDs6lrIHkN9puf2Nr59FEAAAAAElFTkSuQmCC"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form><!-- end search -->
                             </div>
                         </div><!-- end row -->
                         <!-- News and Pop articles -->
                         <div class="row">
                             <div class="col">
-                                <h2 class="title-border">Новости об изжоге</h2>
+                                <h2>Новости об изжоге</h2>
+                                <hr>
                             </div>
                         </div>
                         <div class="row">
-                        <div class="news col">
-                            <div class="card border-light newsCard">
+                        <div class="news col border-right">
+                            <div class="card border-0 newsCard">
                                 <div class="row">
                                     <div class="col-3">
                                         <img src="img/izzhoga.jpg" alt="Регулярная изжога" class="w-100">
@@ -131,11 +138,11 @@
                                             быть не только сама изжога, но и действие
                                             некоторых лекарств от неё...
                                         </p>
-                                        <a href="#0" class="card-link">Читать далее</a>
+                                        <a href="#0" class="card-link float-right">Читать далее</a>
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <div class="card border-light newsCard">
+                            <div class="card border-0 newsCard">
                                 <div class="row">
                                     <div class="col-3">
                                         <img src="img/vitamins.jpg" alt="поливитамины" class="w-100">
@@ -149,11 +156,11 @@
                                             соляной кислоты из желудка в пищевод и тем
                                             самым вызвать раздражение в пищеводе и изжогу...
                                         </p>
-                                        <a href="#0" class="card-link">Читать далее</a>
+                                        <a href="#0" class="card-link float-right">Читать далее</a>
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <div class="card border-light newsCard">
+                            <div class="card border-0 newsCard">
                                 <div class="row">
                                     <div class="col-3">
                                         <img src="img/hamburgerMin.png" alt="гамбургер" class="w-100">
@@ -167,11 +174,11 @@
                                             мысли о нём), у вас в груди начинает жечь, а во рту
                                             появляется горький привкус, вы не одиноки...
                                         </p>
-                                        <a href="#0" class="card-link">Читать далее</a>
+                                        <a href="#0" class="card-link float-right">Читать далее</a>
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <div class="card border-light newsCard">
+                            <div class="card border-0 newsCard">
                                 <div class="row">
                                     <div class="col-3">
                                         <img src="img/tea.png" alt="Горячий чай" class="w-100">
@@ -186,17 +193,17 @@
                                             риск развития рака пищевода у курильщиков
                                             и людей, употребляющих алкоголь...
                                         </p>
-                                        <a href="#0" class="card-link">Читать далее</a>
+                                        <a href="#0" class="card-link float-right">Читать далее</a>
                                     </div>
                                 </div><!-- end row -->
                             </div><!-- end card -->
-                            <a href="#0" class="btn btn-primary btn-lg">Читать новости</a>
+                            <a href="#0" class="btn btn-primary btn-lg float-right">Читать новости</a>
                         </div><!-- end news -->
                         <aside class="popArticles col-lg-4">
                             <h3 class="popArticlesTitle text-center">
                                 Популярные статьи
                             </h3>
-                            <div class="card border-light popCard">
+                            <div class="card border-0 popCard">
                                 <img src="img/3.jpg" alt="Сильная и постоянная изжога" class="card-img-top rounded-circle popArticlesImg">
                                 <div class="card-body">
                                     <h4 class="card-title">
@@ -208,12 +215,12 @@
                                         протяжении пищевода является
                                         признаком изжоги
                                     </p>
-                                    <a href="" class="card-link">
+                                    <a href="" class="card-link float-right">
                                         Читать далее
                                     </a>
                                 </div><!-- end card-body -->
                             </div><!-- end card -->
-                            <div class="card border-light popCard">
+                            <div class="card border-0 popCard">
                                 <img src="img/4.jpg" alt="Как связаны лишний вес и изжога" class="card-img-top rounded-circle popArticlesImg">
                                 <div class="card-body">
                                     <h4 class="card-title">
@@ -227,14 +234,16 @@
                                         никаких лекарств - это причина 
                                         лишнего веса и ожирения
                                     </p>
-                                    <a href="" class="card-link">
+                                    <a href="" class="card-link float-right">
                                         Читать далее
                                     </a>
                                 </div><!-- end card-body -->
                             </div><!-- end card -->
-                            <a href="" class="btn btn-primary btn-sm">
-                                Смотреть еще
-                            </a>
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary btn-sm">
+                                    Смотреть еще
+                                </a>
+                            </div>
                         </aside><!-- end popArticles -->
                         </div><!-- end News and Pop articles -->
                     </div><!-- end content -->
@@ -255,7 +264,7 @@
                                 <div class="col-lg-6">
                                     <div class="row mb-2">
                                         <div class="col-lg">
-                                            <div class="card border-light heroCard">
+                                            <div class="card border-0 heroCard">
                                                 <img src="img/7.jpg" alt="сода" class="card-img-top heroCardImg">
                                                 <div class="card-body">
                                                     <p class="card-text heroCardText">
@@ -267,7 +276,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg">
-                                            <div class="card border-light heroCard">
+                                            <div class="card border-0 heroCard">
                                                 <img src="img/organicCowMilkFresh.jpg" alt="Молоко" class="card-img-top heroCardImg">
                                                 <div class="card-body">
                                                     <p class="card-text heroCardText">
@@ -281,7 +290,7 @@
                                     </div><!-- end row -->
                                     <div class="row mb-3">
                                         <div class="col">
-                                            <div class="card border-light heroCard">
+                                            <div class="card border-0 heroCard">
                                                 <img src="img/5.jpg" alt="Капсулы" class="card-img-top heroCardImg">
                                                 <div class="card-body">
                                                     <p class="card-text heroCardText">
@@ -294,7 +303,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card border-light heroCard">
+                                            <div class="card border-0 heroCard">
                                                 <img src="img/6.jpg" alt="Таблетки" class="card-img-top heroCardImg">
                                                 <div class="card-body">
                                                     <p class="card-text heroCardText">
@@ -319,16 +328,19 @@
                     <div class="row justify-content-end">
                         <div class="col-lg-9">
                             <div class="row">
-                                <h2 class="h2 title-border">
-                                    Вопросы и ответы
-                                </h2>
+                                <div class="col">
+                                    <h2 class="h2 title-border">
+                                        Вопросы и ответы
+                                    </h2>
+                                    <hr>
+                                </div>
                             </div>
                             <div class="row">
                                 <!-- FAQ -->
                                 <div class="col-lg">
                                     <div class="row mb-3">
                                         <div class="col-lg">
-                                            <div class="card border-light">
+                                            <div class="card border-0">
                                                 <div class="testimonialCardImgWrapper">
                                                     <img src="img/16.png" alt="Ирина" class="card-img-top testimonialCardImg">
                                                 </div>
@@ -340,14 +352,14 @@
                                                         Изжога для меня постоянное явление, принимаю соду, помогает. Слышала, что есть народные средства, которые также предотвращают её. Что вы, как врач, думаете, по этому поводу и стоит ли обращаться за методами народной
                                                         медицины в лечении изжоги?
                                                     </p>
-                                                    <a href="" class="card-link">
+                                                    <a href="" class="card-link float-right">
                                                         Узнать ответ
                                                     </a>
                                                 </div><!-- end card-body -->
                                             </div><!-- end card -->
                                         </div>
                                         <div class="col-lg">
-                                            <div class="card border-light">
+                                            <div class="card border-0">
                                                 <div class="testimonialCardImgWrapper">
                                                     <img src="img/18.jpg" alt="Андрей" class="card-img-top testimonialCardImg">
                                                 </div>
@@ -359,7 +371,7 @@
                                                         Как-то пожаловался приятелю на переодические приступы изжоги, и он убедил, что в этой ситуации нужно пить молоко. Попробовал, но после недолгого облегчения вскоре почувствовал усиление жжения за грудиной. Действительно помогает ли молоки от изжоги?
                                                         медецины в лечении изжоги?
                                                     </p>
-                                                    <a href="" class="card-link">
+                                                    <a href="" class="card-link float-right">
                                                         Узнать ответ
                                                     </a>
                                                 </div><!-- end card-body -->
@@ -368,7 +380,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg">
-                                            <div class="card border-light">
+                                            <div class="card border-0">
                                                 <div class="testimonialCardImgWrapper">
                                                     <img src="img/17.jpg" alt="" class="card-img-top testimonialCardImg">
                                                 </div>
@@ -379,14 +391,14 @@
                                                     <p class="card-text testimonialCardText">
                                                         После родов прошло полгода, но по сей день меня мучает не в желудке изжога, а в горле. Причины этого заболевания известны?
                                                     </p>
-                                                    <a href="" class="card-link">
+                                                    <a href="" class="card-link float-right">
                                                         Узнать ответ
                                                     </a>
                                                 </div><!-- end card-body -->
                                             </div><!-- end card -->
                                         </div>
                                         <div class="col-lg">
-                                            <div class="card border-light">
+                                            <div class="card border-0">
                                                 <div class="testimonialCardImgWrapper">
                                                     <img src="img/19.jpg" alt="Юрий" class="card-img-top testimonialCardImg">
                                                 </div>
@@ -398,7 +410,7 @@
                                                         После еды меня часто тошнит. 
                                                         Иногда в добавок к этом прибавляется икота и отрыжка. Если это происходит в гостях, бывает особенно неприятно. Что мне делать?
                                                     </p>
-                                                    <a href="" class="card-link">
+                                                    <a href="" class="card-link float-right">
                                                         Узнать ответ
                                                     </a>
                                                 </div><!-- end card-body -->
@@ -407,7 +419,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <a href="#0" class="btn btn-primary btn-lg">Смотреть все</a>
+                                            <a href="#0" class="btn btn-primary btn-lg float-right">Смотреть все</a>
                                         </div>
                                     </div>
                                 </div>
@@ -416,7 +428,7 @@
                                     <h3>
                                         Задайте вопрос специалисту
                                     </h3>
-                                    <div class="card border-light">
+                                    <div class="card border-0">
                                         <img src="img/1.png" alt="Иванова Марь Иванна" class="card-img-top">
                                         <div class="card-body">
                                             <p class="card-text">
@@ -439,7 +451,9 @@
                                             <label for="">Что Вас беспокоит?</label>
                                             <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Напишите Ваш вопрос"></textarea>
                                         </div>
-                                        <button class="btn btn-primary btn-sm">Задать вопрос</button>
+                                        <div class="text-center">
+                                            <a href="#0" class="btn btn-primary btn-sm">Задать вопрос</a>
+                                        </div>
                                     </form>
                                 </aside>
                             </div><!-- end row -->
@@ -457,11 +471,12 @@
                                     <h2 class="h2 title-border">
                                         Пройдите наши тесты
                                     </h2>
+                                    <hr>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg">
-                                    <div class="card border-light testsCard">
+                                    <div class="card border-0 testsCard">
                                         <div class="card-body">
                                             <h4 class="text-center mb-2">
                                                 Знаете вы, что такое
@@ -475,7 +490,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg">
-                                    <div class="card border-light testsCard">
+                                    <div class="card border-0 testsCard">
                                         <div class="card-body">
                                             <h4 class="text-center">
                                                 Стоит ли беспокоиться при
@@ -499,9 +514,12 @@
                     <div class="row justify-content-end">
                         <div class="col-lg-9">
                             <div class="row">
-                                <h2 class="title-border">
-                                    Видео
-                                </h2>
+                                <div class="col">
+                                    <h2 class="title-border">
+                                        Видео
+                                    </h2>
+                                    <hr>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg">
