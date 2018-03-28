@@ -6145,6 +6145,10 @@ a.menuAnchor {
   box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0; }
 
+@media (max-width: 576px) {
+  .heroCard {
+    margin-bottom: 1rem; } }
+
 .heroCardText {
   font-size: 0.875rem; }
 

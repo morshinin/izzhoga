@@ -110,7 +110,7 @@ a.menuAnchor {
 @media (min-width: 992px) {
 	.searchBtn {
 		padding: 19px 23px 20px 18px;
-		
+
 	}
 	.searchInput {
 		font-size: $h2-font-size;
@@ -146,6 +146,11 @@ a.menuAnchor {
 .heroCard {
 	box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.15);
 	border-radius: 0;
+}
+@media (max-width: 576px) {
+	.heroCard {
+		margin-bottom: 1rem;
+	}
 }
 .heroCardImg {
 	// height: 108px;
