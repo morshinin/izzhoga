@@ -6052,10 +6052,9 @@ a:not(.btn) {
 .menu {
   box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.39);
   border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #5f6061;
   padding: 0; }
-  .menu .list-group {
-    border-radius: 10px;
-    border: solid 1px #5f6061; }
   .menu .menuItem:nth-child(1) {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; }
@@ -6067,14 +6066,29 @@ a:not(.btn) {
   padding: 0;
   border: 0; }
 
-.menuAnchor {
+.menuAnchorImg {
+  opacity: .5;
+  transition: .1s; }
+
+a.menuAnchor {
   display: flex;
-  padding: 0.75rem 1.25rem;
+  color: black;
+  padding: 0.75rem 11px 0.75rem 18px;
   text-transform: uppercase;
   border: 0; }
-  .menuAnchor:hover {
+  a.menuAnchor:hover {
     background: #e9ecef;
-    text-decoration: none; }
+    text-decoration: none;
+    border: 0;
+    color: #9e2282; }
+  a.menuAnchor:hover .menuAnchorImg {
+    opacity: 1; }
+
+.menuAnchorSVGWrapper {
+  width: 40px; }
+
+.search {
+  box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.12); }
 
 .searchBtn {
   background: #f6f6f6;
@@ -6086,7 +6100,8 @@ a:not(.btn) {
   padding: .5rem 0;
   margin-bottom: .5rem; }
 
-.newsCardTitle {
+.newsCardTitle,
+.popCardTitle {
   margin: 0;
   line-height: 1.5; }
 
@@ -6131,7 +6146,8 @@ a:not(.btn) {
   max-height: 63px;
   margin: auto; }
 
-.testimonialCardText {
+.testimonialCardText,
+.testimonialCardLink {
   font-size: 0.875rem; }
 
 .tests {
