@@ -6038,6 +6038,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+/* Main title */
+.hideTitle {
+  position: absolute;
+  left: -9999px; }
+
+/* Base style */
 a:not(.btn) {
   border-bottom: 2px solid #9e2282;
   font-weight: bold; }
