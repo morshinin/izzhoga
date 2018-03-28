@@ -25,73 +25,58 @@
         </header>
         <main>
             <div class="container pb-3">
-                <div class="row justify-content-end">
+                <div class="row">
                     <!-- Left sidebar -->
                      <aside class="col mb-3 mt-1">
                         <div class="sidebarInner">
-                            <nav class="navbar navbar-expand-sm menu mb-3">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarCollapse">
-                                    <span class="navbar-toggler-icon"></span>
+                            <nav class="navbar navbar-expand-lg navbar-light mb-3 bg-white">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="" id="navbarCollapse">
-                                    <ul class="list-group">
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/icon.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Проблемы
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/pills2.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Лечение и советы
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/newspaper.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Новости
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/shopping-list.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Тесты
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/video.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Видео
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/help.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Вопросы и ответы
-                                            </a>
-                                        </li>
-                                        <li class="list-group-item menuItem">
-                                            <a href="" class="menuAnchor">
-                                                <span class="menuAnchorSVGWrapper">
-                                                    <img src="img/icons/spoon.png" alt="" class="menuAnchorImg">
-                                                </span>
-                                                Диеты
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <div class="menu mb-3 flex-column collapse navbar-collapse" id="navbarToggleExternalContent">
+                                    <!-- <a href="" class="nav-link">Проблемы</a> -->
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/icon.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Проблемы
+                                    </a>
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/pills2.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Лечение и советы
+                                    </a>
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/newspaper.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Новости
+                                    </a>
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/shopping-list.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Тесты
+                                    </a>
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/video.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Видео
+                                    </a>
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/help.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Вопросы и ответы
+                                    </a>
+                                    <a href="" class="menuAnchor nav-link">
+                                        <span class="menuAnchorSVGWrapper">
+                                            <img src="img/icons/spoon.png" alt="" class="menuAnchorImg">
+                                        </span>
+                                        Диеты
+                                    </a>
                                 </div>
                             </nav>
                             <img src="img/abansquare.jpg" alt="">
@@ -103,10 +88,10 @@
                             <div class="col">
                                 <form class="search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control form-control-lg" placeholder="Поиск по сайту">
+                                        <input type="text" class="form-control form-control-lg searchInput" placeholder="Поиск по сайту">
                                         <div class="input-group-append">
                                             <button class="btn searchBtn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" class="searchBtnIcon">
                                                   <image width="31" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAMAAAAocOYLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABiVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////wfpXTAAAAgXRSTlMAI2+t0uvt1LJ4KiekNWr6fI7vqWdVU2Wh6KJ5hxcOeveVQeY5JtZe3PIoFeLsX1Q4wsCo11D7Vj4wgfQZB+Nhmtm+y42b2L1/gvUWBOFR/VIxxd8CYk4zHw8QRjIh0/hY9nYJa9GR5Z1kRZiG7oCluS7p3byJbQo3Zjz8QldMacEG2Ph/AAAAAWJLR0SCi7P/RAAAAW1JREFUKM99kvk/AlEUxadSUnaStaJQItmylJAt2claQvY9e5Zw/nN3zKh5E90f5nPO+555776F48RSKFV5ak2+tkDH/VH6QqRLW5SFi0sgrVIZLuMHyysqDVXG6hpe1zK4jh+qbxCMyWwh1yjBTeSttoxvbqGB1oy3A4426XzOdqDD9OtclO5k+3FLejR1Ad3y/fQAvaLs8wD9cj5AEwwKcgjw+uR82A+MCHIUGMs+zwBgFpQKGM/mWmBCUJPAVDafBoKCmgFCs3I8Nw8YBbmwCCzJuY36Xxb3vwIE5JxuezUs6jXKrrN4g7ljWsuxKcVbdP6h7bSNUNofzeCdGLC7J8kHKbAfF384OFSTPWLWO+YfyMnpWeTcdWH/eWGeSyagZN6f5Yo+10xAd5PBCb2CD8TZPd3GE7E7zf3Do5tM1EuBJ/mphJ2+Z1Em+Uf6wv1fr28UcOUIvPOtpHIEPvjAZ46AgfhXDs6lrIHkN9puf2Nr59FEAAAAAElFTkSuQmCC"/>
                                                 </svg>
                                             </button>
@@ -263,7 +248,7 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6">
                                     <div class="row mb-2">
-                                        <div class="col-lg">
+                                        <div class="col">
                                             <div class="card border-0 heroCard">
                                                 <img src="img/7.jpg" alt="сода" class="card-img-top heroCardImg">
                                                 <div class="card-body">
@@ -275,7 +260,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg">
+                                        <div class="col">
                                             <div class="card border-0 heroCard">
                                                 <img src="img/organicCowMilkFresh.jpg" alt="Молоко" class="card-img-top heroCardImg">
                                                 <div class="card-body">
@@ -337,7 +322,7 @@
                             </div>
                             <div class="row">
                                 <!-- FAQ -->
-                                <div class="col-lg border-right">
+                                <div class="col-lg border-right mb-sm-3">
                                     <div class="row mb-3">
                                         <div class="col-lg">
                                             <div class="card border-0">
@@ -429,7 +414,7 @@
                                         Задайте вопрос специалисту
                                     </h3>
                                     <div class="card border-0">
-                                        <img src="img/1.png" alt="Иванова Марь Иванна" class="card-img-top">
+                                        <img src="img/1.png" alt="Иванова Марь Иванна" class="mx-auto" width="208" height="208">
                                         <div class="card-body">
                                             <p class="card-text text-center">
                                                 На ваши вопросы ответит
