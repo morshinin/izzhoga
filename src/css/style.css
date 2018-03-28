@@ -6051,13 +6051,17 @@ a:not(.btn) {
     color: #71195d;
     border-bottom: 2px solid #71195d; }
 
-@media (min-width: 992px) {
-  .sidebarInner {
-    position: fixed; } }
+@media (max-width: 992px) {
+  .logo {
+    margin-bottom: 1rem; } }
+
+.sidebarInner {
+  z-index: 150; }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .sidebarInner {
-    max-width: 232px; } }
+    max-width: 232px;
+    position: fixed !important; } }
 
 /* Nav */
 .menu {
@@ -6102,13 +6106,15 @@ a.menuAnchor {
 .searchBtn {
   background: #f6f6f6;
   border: 1px solid #ced4da;
-  border-left: 0;
-  padding: 19px 23px 20px 18px; }
+  border-left: 0; }
 
-.searchInput {
-  font-size: 1.5rem;
-  color: rgba 0 0 0, 0.5;
-  padding-left: 53px; }
+@media (min-width: 992px) {
+  .searchBtn {
+    padding: 19px 23px 20px 18px; }
+  .searchInput {
+    font-size: 1.5rem;
+    color: rgba 0 0 0, 0.5;
+    padding-left: 53px; } }
 
 /* News and popular articles */
 .newsCard,

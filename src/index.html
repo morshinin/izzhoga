@@ -16,6 +16,7 @@
                         <div class="logo">
                             <img src="img/logo.jpg" class="img-fluid" alt="изжоги.нет лого">
                             <h1 class="hideTitle">
+                                <a href=""></a>
                                 Изжоги.нет - информационный портал
                             </h1>
                         </div>
@@ -26,12 +27,12 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="airSticky_stop-block">
             <div class="container pb-3">
                 <div class="row">
                     <!-- Left sidebar -->
                      <aside class="col mb-3 mt-1">
-                        <div class="sidebarInner">
+                        <div class="sidebarInner airSticky">
                             <nav class="navbar navbar-expand-lg navbar-light mb-3 bg-white">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
@@ -82,7 +83,7 @@
                                     </a>
                                 </div>
                             </nav>
-                            <img src="img/abansquare.jpg" alt="">
+                            <img class="d-none d-lg-block" src="img/abansquare.jpg" alt="">
                         </div>
                     </aside>
                     <div class="content col-lg-9"> 
@@ -114,7 +115,7 @@
                         <div class="news col border-right">
                             <div class="card border-0 newsCard">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-lg-3">
                                         <img src="img/izzhoga.jpg" alt="Регулярная изжога" class="w-100">
                                     </div>
                                     <div class="col-lg">
@@ -132,7 +133,7 @@
                             </div><!-- end card -->
                             <div class="card border-0 newsCard">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-lg-3">
                                         <img src="img/vitamins.jpg" alt="поливитамины" class="w-100">
                                     </div>
                                     <div class="col-lg">
@@ -150,7 +151,7 @@
                             </div><!-- end card -->
                             <div class="card border-0 newsCard">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-lg-3">
                                         <img src="img/hamburgerMin.png" alt="гамбургер" class="w-100">
                                     </div>
                                     <div class="col-lg">
@@ -168,7 +169,7 @@
                             </div><!-- end card -->
                             <div class="card border-0 newsCard">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-lg-3">
                                         <img src="img/tea.png" alt="Горячий чай" class="w-100">
                                     </div>
                                     <div class="col-lg">
@@ -558,5 +559,15 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.airStickyBlock.js"></script>
+        <script>
+            jQuery(document).ready(function($){
+                window.onload = function() { 
+                    $('.airSticky').airStickyBlock({
+                        offsetTop: 10
+                    });
+                };
+            });
+        </script>
     </body>
 </html>
