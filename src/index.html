@@ -17,7 +17,6 @@
                             <a href="#0">
                                 <img src="img/logo.jpg" class="img-fluid" alt="изжоги.нет лого">
                                 <h1 class="hideTitle">
-                                    <a href=""></a>
                                     Изжоги.нет - информационный портал
                                 </h1>
                             </a>
@@ -37,12 +36,14 @@
                     <!-- Left sidebar -->
                      <aside class="col mb-lg-3 mt-1">
                         <div class="sidebarInner airSticky">
-                            <nav class="navbar navbar-expand-lg navbar-light mb-3 bg-white pt-xs-2 pb-2">
+                            <nav class="navbar navbar-expand-lg navbar-light mb-3">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="menu mb-3 flex-column collapse navbar-collapse" id="navbarToggleExternalContent">
-                                    <!-- <a href="" class="nav-link">Проблемы</a> -->
+                                <a href="#0" class="navbar-brand d-xs-block d-sm-block d-md-block d-lg-none">
+                                    <img src="img/logoSm.jpg" alt="изжоги.нет лого" class="img-fluid logoImgSmall">
+                                </a>
+                                <div class="menu mb-3 flex-column collapse navbar-collapse bg-white" id="navbarToggleExternalContent">
                                     <a href="" class="menuAnchor nav-link">
                                         <span class="menuAnchorSVGWrapper">
                                             <img src="img/icons/icon.png" alt="" class="menuAnchorImg">
@@ -548,11 +549,13 @@
                                         <div class="embed-responsive embed-responsive-16by9">
                                           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                                         </div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                Что такое изжога ?
-                                            </p>
-                                        </div>
+                                        <a href="#0" class="videoCardLink">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Что такое изжога ?
+                                                </p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-lg">
@@ -560,11 +563,13 @@
                                         <div class="embed-responsive embed-responsive-16by9">
                                           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                                         </div>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                Как избавиться от изжоги ?
-                                            </p>
-                                        </div>
+                                        <a href="#0" class="videoCardLink">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Как избавиться от изжоги ?
+                                                </p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -594,7 +599,7 @@
             jQuery(document).ready(function($){
                 window.onload = function() { 
                     $('.airSticky').airStickyBlock({
-                        offsetTop: 0
+                        offsetTop: 30
                     });
                 };
             });

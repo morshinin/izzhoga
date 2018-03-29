@@ -132,10 +132,21 @@
             function setPosition(position){
                 switch (position){
                     case 'fixed':
-                        $this.css({
-                            'position': position,
-                            'top': settings.offsetTop + 'px'
-                        }).removeClass('airSticky_absolute airSticky_relative').addClass('airSticky_fixed');
+                        // На мобильных и на десктопе разные отступы
+                        if ($(window).width() < 992) {
+                            $this.css({
+                                'position': position,
+                                'top': '0px',
+                                'left': 0,
+                                'width': '100%',
+                                'padding': '0 5px 5px'
+                            }).removeClass('airSticky_absolute airSticky_relative').addClass('airSticky_fixed');
+                        } else {
+                            $this.css({
+                                'position': position,
+                                'top': settings.offsetTop + 'px'
+                            }).removeClass('airSticky_absolute airSticky_relative').addClass('airSticky_fixed');
+                        }
                         break;
                     case 'absolute':
                         $this.css({
