@@ -143,7 +143,7 @@ a {
   -webkit-text-decoration-skip: objects; }
   a:hover {
     color: #5f144e;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -2005,11 +2005,11 @@ fieldset:disabled a.btn {
   background-color: transparent; }
   .btn-link:hover {
     color: #5f144e;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
   .btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
+    text-decoration: none;
     border-color: transparent;
     box-shadow: none; }
   .btn-link:disabled, .btn-link.disabled {
@@ -6043,13 +6043,15 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   left: -9999px; }
 
-/* Base style */
-a:not(.btn) {
+/* Card */
+.card-link {
   border-bottom: 2px solid #9e2282;
-  font-weight: bold; }
-  a:not(.btn):hover {
+  font-weight: bold;
+  box-sizing: border-box; }
+  .card-link:hover {
     color: #71195d;
-    border-bottom: 2px solid #71195d; }
+    border-bottom: 0;
+    padding-bottom: 2px; }
 
 @media (max-width: 992px) {
   .logo {
@@ -6092,7 +6094,8 @@ a.menuAnchor {
     background: #e9ecef;
     text-decoration: none;
     border: 0;
-    color: #9e2282; }
+    color: #9e2282;
+    padding: 0.75rem 11px 0.75rem 18px; }
   a.menuAnchor:hover .menuAnchorImg {
     opacity: 1; }
 
@@ -6127,7 +6130,8 @@ a.menuAnchor {
   margin: 0;
   line-height: 1.5; }
 
-.popArticlesImg {
+.popArticlesImg,
+.popArticlesImgWrapper {
   width: 139px;
   margin: auto; }
 
@@ -6143,11 +6147,17 @@ a.menuAnchor {
 
 .heroCard {
   box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 0; }
+  border-radius: 0;
+  transition: .3s; }
+  .heroCard:hover {
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.15); }
 
 @media (max-width: 576px) {
   .heroCard {
     margin-bottom: 1rem; } }
+
+.heroCardWrapperLink {
+  color: black; }
 
 .heroCardText {
   font-size: 0.875rem; }
@@ -6182,6 +6192,11 @@ a.menuAnchor {
 
 .testsCard {
   background: #f6f6f6; }
+
+.testsCardWrapperLink {
+  color: black; }
+  .testsCardWrapperLink:hover {
+    color: #9e2282; }
 
 /* Footer */
 .footer {

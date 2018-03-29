@@ -8,6 +8,7 @@ $h2-font-size: 1.5rem;
 $h3-font-size: 1.25rem;
 $h4-font-size: 1rem;
 $headings-font-weight: bold;
+$link-hover-decoration: none;
 $navbar-padding-y: 0;
 $navbar-padding-x: 0;
 $btn-padding-x-lg: 3rem;
@@ -23,13 +24,16 @@ $theme-colors: (
 	position: absolute;
 	left: -9999px;
 }
-/* Base style */
-a:not(.btn) {
+/* Card */
+// a:not(.btn)
+.card-link {
 	border-bottom: 2px solid $primary-color;
 	font-weight: bold;
+	box-sizing: border-box;
 	&:hover {
 		color: $primary-dark;
-		border-bottom: 2px solid $primary-dark;
+		border-bottom: 0;
+		padding-bottom: 2px;
 	}	
 }
 // .sidebar {
@@ -90,6 +94,7 @@ a.menuAnchor {
 		text-decoration: none;
 		border: 0;
 		color: $primary-color;
+		padding: 0.75rem 11px 0.75rem 18px;
 	}
 	&:hover .menuAnchorImg {
 		opacity: 1;
@@ -129,7 +134,8 @@ a.menuAnchor {
 	margin: 0;
 	line-height: 1.5;
 }
-.popArticlesImg {
+.popArticlesImg,
+.popArticlesImgWrapper {
 	width: 139px;
 	margin: auto;
 }
@@ -146,11 +152,18 @@ a.menuAnchor {
 .heroCard {
 	box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.15);
 	border-radius: 0;
+	transition: .3s;
+	&:hover {
+		box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.15);
+	}
 }
 @media (max-width: 576px) {
 	.heroCard {
 		margin-bottom: 1rem;
 	}
+}
+.heroCardWrapperLink {
+	color: black;
 }
 .heroCardImg {
 	// height: 108px;
@@ -188,6 +201,12 @@ a.menuAnchor {
 }
 .testsCard {
 	background: $gray-100;
+}
+.testsCardWrapperLink {
+	color: black;
+	&:hover {
+		color: $primary-color;
+	}
 }
 /* Footer */
 .footer {
