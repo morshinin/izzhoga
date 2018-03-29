@@ -19,13 +19,16 @@ $theme-colors: (
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+/* Buttons */
+.btn-primary {
+	box-shadow: 5px 5px 0 $primary-dark;
+}
 /* Main title */
 .hideTitle {
 	position: absolute;
 	left: -9999px;
 }
 /* Card */
-// a:not(.btn)
 .card-link {
 	border-bottom: 2px solid $primary-color;
 	font-weight: bold;
@@ -36,18 +39,6 @@ $theme-colors: (
 		padding-bottom: 2px;
 	}	
 }
-// .sidebar {
-// 	// position: sticky;
-// 	// top: 10px;
-// 	// overflow: auto;
-// }
-// @media (min-width: 992px) {
-// 	// .sidebarInner {
-// 	// 	position: sticky;
-// 	// 	top: 10px;
-// 	// 	bottom: -100px;
-// 	// }
-// }
 @media (max-width: 992px) {
 	.logo {
 		margin-bottom: 1rem;
@@ -124,6 +115,11 @@ a.menuAnchor {
 	}
 }
 /* News and popular articles */
+@media (max-width: 992px) {
+	.news {
+		margin-bottom: 1rem;
+	}
+}
 .newsCard,
 .popCard {
 	padding: .5rem 0;
@@ -165,15 +161,14 @@ a.menuAnchor {
 .heroCardWrapperLink {
 	color: black;
 }
-.heroCardImg {
-	// height: 108px;
-}
 .heroCardText {
 	font-size: $font-size-sm;
 }
-/* Buttons */
-.btn-primary {
-	box-shadow: 5px 5px 0 $primary-dark;
+/* FAQ */
+@media (max-width: 992px) {
+	.faq {
+		margin-bottom: 1rem;
+	}
 }
 /* Testimonials */
 .testimonialCardImgWrapper {
@@ -201,6 +196,11 @@ a.menuAnchor {
 }
 .testsCard {
 	background: $gray-100;
+}
+@media (max-width: 992px) {
+	.testsCard {
+		margin-bottom: 1rem;
+	}
 }
 .testsCardWrapperLink {
 	color: black;
