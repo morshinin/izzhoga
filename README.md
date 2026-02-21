@@ -1,14 +1,18 @@
-# Bootstrap 4 Starter Pack (BETA 4.0.0)
+# Izzhoga - HTML Markup
 
-Includes complete Bootstrap 4.0.0-beta dev environment with gulp and sass
-
-If you are looking for the alpha6 version [click here](https://github.com/bradtraversy/bs4starter_alpha6)
+## 📸 Screenshot
+![Screenshot](screenshot.png)
 
 ### Version
 
 1.0.0
 
 ## Install Dependencies
+
+```bash
+nvm install 8
+nvm use 8
+```
 
 ```bash
 npm install 
